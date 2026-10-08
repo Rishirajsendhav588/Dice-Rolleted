@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            transition: all ease-in-out 0.3s;
+        }
+    </style>
+</head>
+<body id="game-body" class="bg-slate-900 min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-white/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl max-w-md w-full text-gray-800 border border-white/20">
+        
+
+        <div class="flex justify-between items-center bg-gray-100 p-3 rounded-xl mb-6 text-sm font-bold text-gray-700">
+            <span id="total_games" class="bg-gray-200 px-3 py-1 rounded-lg">Games: 0/10</span>
+            <span id="total_wins" class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-lg">Wins: 0</span>
+            <span id="total_lost" class="bg-rose-100 text-rose-700 px-3 py-1 rounded-lg">Lost: 0</span>
+        </div>
+
+        <div class="flex justify-center items-center space-x-10 text-red-500 text-9xl  my-6">
+            <i id="dice-one" class="fa-solid fa-dice-five transform transition-transform duration-300"></i>
+            <i id="dice-two" class="fa-solid fa-dice-four transform transition-transform duration-300"></i>
+        </div>
+
+        <h1 class="text-3xl font-black my-4 text-center text-gray-900 min-h-[40px]">Roll the Dice!</h1>
+
+
+        <button class="my-2 bg-gray-900 text-white py-4 px-6 w-full rounded-xl text-xl font-bold hover:bg-gray-800 active:scale-95 transition-all shadow-lg cursor-pointer">
+            Roll Dice
+        </button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
